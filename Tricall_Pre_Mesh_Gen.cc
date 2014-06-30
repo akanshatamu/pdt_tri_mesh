@@ -395,9 +395,6 @@ int Tricall_Pre_Mesh_Gen::getpolyfiles(int argc, char **argv)
 		
 			cout <<"!!!!!!@@@@@@@@@@@@@@@@@@@@@" << i << "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@!!!!\n";
 			
-		
-		
-			
 			int numberofpoints;
 			int numberofpointattributes;
 			int numberofsegments;
