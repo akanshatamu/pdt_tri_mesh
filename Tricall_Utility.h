@@ -81,6 +81,8 @@ class Tricall_Utility
 {
 private:
 	//
+  char *options_triangle_first_call  = "pqencAQ";
+  char *options_triangle_second_call = "YqenPAQ";
 
 public:
 	Tricall_Utility(void);
@@ -91,9 +93,10 @@ public:
 	void exportnodes(struct triangulateio *io,int markers,char *filename);
 	void exportedges(struct triangulateio *io,int markers,char *filename);
 	void exportelements(struct triangulateio *io,char *filename);
-	void printHowdy();
-	void trianglePreload();
 	void generateTriangleMesh(Data_Transfer_Object&);
-	void createPolyFiles(vector < vector < vector <double> > >,int,int,int,vector< string > );
+	void generateMeshWithFixedBoundaries(Data_Transfer_Object&);
+	void exportnodesfrmArray(vector <double>&,char *filename,int);
+	void exportedgesfrmArray(int *,int *,char *filename,int,int);
+	void exporttrianglesfrmArray(int *,char *,int ,int );
 };
 
